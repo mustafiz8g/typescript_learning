@@ -1,5 +1,8 @@
 
 
+{
+
+
 
 
 // destructuring
@@ -29,6 +32,9 @@ const myFriends = ['chandler', 'joy', 'ros', 'rahel','pross', 'moni', 'firir'];
 const [,, bestFriend, ...rest] = myFriends;
 
 
+
+
+}
 
 
 
