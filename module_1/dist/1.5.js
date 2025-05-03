@@ -7,4 +7,3 @@ const user = {
     lastName: 'Tusher',
     isMarried: false
 };
-user.company = '';

@@ -2,6 +2,17 @@
 {
 // Type alias
 
+const brothers : {
+    name: string;
+    age: number;
+    isGood: boolean;
+} ={
+    name: "Sabiha",
+    age: 33,
+    isGood: true
+}
+
+
 type Student =  {
     name: string;
     age: number;
@@ -41,6 +52,42 @@ const isAdmin : IsAdmin = true
 // const add = (num1 : number , num2 : number) => num1 + num2
 type Add = (num1: number, num2 : number) => number
 const add : Add = (num1  , num2 ) => num1 + num2
+
+
+
+// Revision 1 -=================================================================
+
+type Cousin = {
+    name: string;
+    gender: string;
+    age: number;
+    contact?: number;
+}
+
+const bigBrother : Cousin = {
+    name: 'Monirul Islam',
+    gender: 'male',
+    age: 22,
+    contact: 234234
+}
+const elderBrother : Cousin = {
+    name: 'Monirul Islam',
+    gender: 'male',
+    age: 22,
+}
+
+
+type brosName = string;
+type isFit = boolean;
+
+const name: brosName = 'Karim'
+const isGood: isFit =  true;
+
+
+type Total = (num1: number , num2: number) => number
+
+const total : Total = (num1, num2) => num1 + num2
+
 
 
 }

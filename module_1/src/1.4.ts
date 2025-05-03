@@ -41,3 +41,18 @@ let names : [string, string] = ['Mustafizur', 'Rahman']
 
 let ageName : [number, string] = [22, 'Mr.X']
 ageName[1] = 'djf'
+
+let bou : [string, boolean, number] = ['Sabiha', true , 22]
+bou[0] = 'Humaira'
+
+let a : string =  'Mustafizur';
+let n : number = 22;
+let b : boolean = false;
+let nu : null = null;
+let un : undefined = undefined
+
+let arr :string[] = ['mus', 'sai', 'sad', 'tuli']
+arr.push('mah')
+
+let num: number[] = [22,33,44,];
+num.push()

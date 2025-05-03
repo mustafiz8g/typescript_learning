@@ -1,6 +1,9 @@
 
 {
-    //
+    //  ts-node-dev --respawn --transpile-only server.ts
+     
+    // npm i -g ts-node-dev
+
     // ternary operator || optional chaining || nullish coalescing operator
 
     const age: number = 25;
@@ -50,4 +53,66 @@
    console.log({permanentAdress})
 
     //
+
+
+    // revision 1 ===============================================================================================
+
+    const cLass : number = 9;
+    if(cLass > 10){
+        console.log('you are not eligible')
+    }
+    else{
+        console.log('You are elgible')
+    }
+
+    const isMashallah : boolean = true
+    
+  const isEligible = isMashallah ? 'I wil marry you' : 'May Allah give you more good husband'
+ console.log({isEligible})
+
+
+  
+
+ // nullish coalecing operator rivision 
+// null / undefined -----> decision making
+  
+/**
+ * // const isBeautiful = null;
+const isBeautiful = undefined;
+const result3 = isBeautiful ?? 'Guest' ;
+console.log({result3})
+ */
+
+const isDindar = 0;
+const result4 = isDindar ?? 'Guest'
+const result5 = isDindar ? isDindar : 'Guest'
+console.log({result4})
+console.log({result5})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

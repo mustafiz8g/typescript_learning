@@ -46,6 +46,53 @@
     }
 
 
+    // revision   1 =====================================================================================================
+
+    type NewTeacher = 'fresherTeacher' | 'goodTeacher';
+    type OldTeacher = 'betterTeacher' | 'experiencedTeacher';
+    type Teacher = NewTeacher | OldTeacher
+    
+    const hasan : NewTeacher = "fresherTeacher";
+    const juwel : OldTeacher = 'experiencedTeacher';
+
+    const jiaSir : Teacher = 'betterTeacher'
+
+
+
+
+  type Character = {
+    name: string;
+    age: number;
+    blood: 'O+' | 'B+'| 'AB+'|'O-' |'AB-' ;
+    gender: 'male' | 'female'
+
+  } 
+
+  const sabiha  : Character = {
+    name: 'Sabiha',
+    age: 22,
+    blood : 'O+',
+    gender : "female"
+  }
+
+
+  type EnglishTeacher = {
+    skills: string[];
+    designation1 : 'English Teacher'
+  }
+   type MathTeacher = {
+    skills: string[];
+    designation2 : 'MathTeacher'
+   }
+
+  type Teacher2 = EnglishTeacher & MathTeacher;
+
+  const teacher : Teacher2 = {
+     skills: ['tense', 'verb', 'preposition'],
+     designation1: "English Teacher",
+     designation2: "MathTeacher"
+     
+  }
 
 
     //

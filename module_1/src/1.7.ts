@@ -56,4 +56,44 @@ greetFriends('Abul', 'Babul', 'Tabul', 'Ubul', 'Labul')
 
 
 
+// revision -------------------------------------------------------------------------------
+
+const arr1 : string[] = ['Mustafizur' , 'Rahman', 'Tusher'];
+const  arr2 : string[] = ['Saidur', 'Rahman', 'Tuhin'];
+
+arr1.push(...arr2)
+
+
+const cousin1 = {
+    first: 'Anzuman',
+    second: 'Ara',
+    last: 'Sabiha'
+}
+const cousin2 = {
+    prothm: 'Fatema',
+    middle: 'Nasrin',
+    last: 'Sadia'
+}
+
+  const cousin = {...cousin1 , ...cousin2}
+
+
+// learn rest operator 
+
+const greetBrothers = (...brothers : string[]) => {
+    brothers.forEach((bro: string) => console.log(` hI ${bro}`) )
+}
+
+greetBrothers('Mustafizur', 'Saidur', 'Monirul' , 'Juwel' , 'Manon')
+
+
+
+
+
+
+
+
+
+
+
 }
