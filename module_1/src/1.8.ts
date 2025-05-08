@@ -19,8 +19,7 @@ const user = {
 }
 
 const {
-     contactInfo  ,
-     name : { middleName  } 
+     contactInfo, name: {middleName}
     } = user;
 
 
@@ -29,8 +28,7 @@ const {
 // array destructuring
 
 const myFriends = ['chandler', 'joy', 'ros', 'rahel','pross', 'moni', 'firir'];
-const [,, bestFriend, ...rest] = myFriends;
-
+const [,,bestfriend, ...rest] = myFriends
 
 
 

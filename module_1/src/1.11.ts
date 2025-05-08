@@ -28,6 +28,10 @@
    const result1= isAuthenticated ?? 'Guest' 
    const result2 =  isAuthenticated ? isAuthenticated : 'Guest'
    console.log({result1 , result2})
+
+   const isBeautiful = '';
+   const output1 = isBeautiful ?? 'guest'
+   const output2 = isBeautiful ? isBeautiful : 'guest'
    
 
    type User = {

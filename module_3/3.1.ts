@@ -27,6 +27,24 @@
   
  
 
+  // revision 1 =============================================
+
+  class Car {
+    constructor(public name: string, public price: number){
+    }
+    makeRun(){
+      console.log(`Now on the way ${this.name} which cost ${this.price}`)
+    }
+  }
+  const royal = new Car('Royal Enfield', 30000);
+  console.log(royal);
+  
+  const r15 = new Car('Yamaha', 400000);
+  console.log(r15);
+
+  royal.makeRun();
+  r15.makeRun()
+
 
 
 

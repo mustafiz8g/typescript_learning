@@ -84,3 +84,32 @@
 
     //
 }
+
+
+
+// revision =================================================
+
+class Dev {
+    doCode(){
+        console.log('I am coding 10 hour')
+    }
+}
+class Frontend extends Dev{
+    doCode() {
+        console.log('I am coding 9 hour')
+
+    }
+}
+class Backend extends Dev{
+    doCode() {
+        console.log('I am coding 8 hour')
+
+    }
+}
+
+const dev1 = new Dev()
+const dev2 = new Frontend()
+const dev3 = new Backend()
+dev1.doCode()
+dev2.doCode()
+dev3.doCode()

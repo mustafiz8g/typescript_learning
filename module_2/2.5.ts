@@ -51,10 +51,19 @@
 
 
 
+// revision ==================================================
+
+const getName = (param:string) : string[] => {
+  return [param]
+}
+const name = getName('Mustafizur d');
+console.log(name)
 
 
 
-
+const createArrayWithGeneric1 = <T>(param:T) : T[] => {
+  return [param]
+}
 
 
 

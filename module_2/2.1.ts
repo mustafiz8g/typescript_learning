@@ -4,38 +4,36 @@
     // type assertion
 
    let anything : any;
-   anything = 'Next Level Web Development' ;
+   anything = 3;
+  //  (anything as number).
+   (anything as string)
+
    
-   anything = 222;
-//    (anything as number).
-
-
    const kgToGram = (value: string | number) : string | number | undefined => {
-      if(typeof value === 'string'){
-        const convertedValue = parseFloat(value)*1000
-        return `The converted value is ${convertedValue}`
-      }
-      if(typeof value === 'number'){
-        return value*1000
-      }
+    if(typeof value === 'string'){
+      const convertedValue = parseFloat(value) * 1000;
+      return `the converted value is ${convertedValue}`
+    }
+    if(typeof value === 'number'){
+      return value * 1000
+    }
    }
 
-   const result1 = kgToGram(1000) as number
-   console.log(result1)
-   const result2 = kgToGram('33') as string ;
-   console.log(result2)
 
-  
-   type CustomError = {
-     message:string;
-   }
+  const result1 = kgToGram(33) as number ;
+  const result2 = kgToGram('22') as string
+  console.log(result1)
+  console.log(result2)
 
-   try{
 
-   }
-   catch(error){
+  type CustomError = {
+    message:string
+  }
+  try{
+
+  }catch(error){
     console.log((error as CustomError).message)
-   }
+  }
 
 
 

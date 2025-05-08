@@ -4,6 +4,9 @@
 
         //  const rollnumbers : number[] = [2,3,4];
          const rollnumbers : Array<number> = [2,3,4];
+         const classNumber : Array<number> = [2,3,4]
+         const className: Array<string> = ['22','44', 'kdfj', 'kdfj'];
+         const isClass: Array<boolean> = [true, false, true]
 
         //  const mentors: string[] = ['mr', 'ara', 'sabi', 'ke'];
          const mentors: Array<string> = ['mr', 'ara', 'sabi', 'ke'];
@@ -11,13 +14,31 @@
         //  const boolArray : boolean[] = [true, false, true];
          const boolArray : Array<boolean> = [true, false, true];
 
+         
 
        type GenericArray1 = Array<number>
        type GenericArray2 = Array<string>
        type GenericArray3 = Array<boolean>
 
+       type GenericArraya = Array<number>
+       type GenericArrayb = Array<string>
+       type GenericArrayc = Array<boolean>
 
+       const animals : GenericArraya  = [22,33,22];
+       const rollNumbers : GenericArrayb = ['33', '33', 'dkf'];
+       const isGoodd : GenericArrayc = [true, false, true]
+
+
+       type GenericArrayr<param> = Array<param>
+
+       const wife : GenericArrayr<string> = ['dfd', 'kdjf', 'dfk']
+       const numbers : GenericArrayr<number> = [2,3,4,2,2];
+       const isIs : GenericArrayr<boolean> = [true, false, true, false]
    
+       type GenericArr<T> = Array<T>
+
+       const wivess : GenericArr<string> = ['jan', 'koliz', 'tia'];
+       const borss : GenericArr<number> = [22,34,22]
        const add = (x: number, y: number) => x + y ;
 
       add(11,22)
@@ -39,8 +60,19 @@
       const isSelect : GenericArray<boolean> = [true, false, false]
 
    
+      interface Wivs {
+        name: string;
+        age: number
+      }
+      const wivs : GenericArr<Wivs> = [
+        {name: 'Sabiha', age: 2},
+        {name: 'Anjuman',age: 21}
+
+      ]
+
 
       //
+      
       
    /*
       const user : GenericArray<{name: string, age: number}>   = [
@@ -75,6 +107,9 @@
 
 
     // generic tuple
+    type GenericTuplee<a,b> = [a,b];
+
+    const jantus : GenericTuplee<string, string> = ['jan', 'suna']
 
     
     // const manush : [string, string] = ['mr x' , 'mr y']

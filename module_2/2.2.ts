@@ -37,6 +37,33 @@
     }
 
 
+    type Person = {
+      name :string;
+      status: string
+    }
+   type Mustafiz = Person & {isGood: boolean}
+
+    const mustafizur : Mustafiz = {
+      name: 'Mustafizur',
+      status: 'good',
+      isGood: true
+    }
+
+    interface Person2{
+      name: string;
+      status: string
+    }
+
+    interface Jan extends Person2 {
+      isMayabi: boolean
+    }
+
+    const myWife : Jan = {
+      name: 'Anzuman',
+      isMayabi: true,
+      status: 'good'
+    }
+
 
 
     // js --> object , array --> object funciton -> object
@@ -47,6 +74,11 @@
     interface Roll2 {
         [index : number] : number
     }
+
+    interface Roll3 {
+      [index: number ]: number
+    }
+    const rool: Roll3 = [2,2,3]
     
     // const rollNumber : Roll1 = [1,2,3]
     const rollNumber : Roll2 = [1,2,3]
@@ -56,6 +88,11 @@
    //
 //    type declare in funciton 
    type Add = (num1 : number , num2 : number) => number
+   type Sum = (a: number, b: number) => number;
+
+   interface Sum2 {
+    (a:number, b:number) : number
+   }
 
    const add : Add = (num1 , num2) => num1 + num2 ;
   // interface declare  in funcition

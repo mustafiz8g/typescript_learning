@@ -1,65 +1,39 @@
 {
     //nullable types / unknown types
     
-    const searchName = (value: unknown) => {
-        if(value){
-            console.log('searching')
-        }
-        else{
-            console.log('There is nothing to search')
-        }
+  const searchName = (value: string | null) => {
+    if(value){
+        console.log('searching')
     }
-
-    searchName(null)
-
-    // unknown typeof
-
-    const getSpeedinMeterPerSecond = (value: unknown) => {
-        if(typeof value === 'number'){
-            const convertedSpeed = value*1000/3600;
-            console.log(`The speed is ${convertedSpeed} ms^-1`)
-        }
-        else if(typeof value === 'string'){
-            // const valueInNumber = value.split(' ')
-            // console.log(valueInNumber)
-            // const IntegerNumber = parseFloat(valueInNumber[0])
-            // const convertedSpeed = IntegerNumber*1000/3600;
-            // console.log(`The speed is ${convertedSpeed} ms^-1`)
-
-            const [result, unit] = value.split(' ')
-            const convertedSpeed = (parseFloat(result))*1000/3600;
-
-            console.log(`The speed is ${convertedSpeed} ms^-1`)
-
-        }
-        else{
-            console.log('wrong input')
-        }
-
+    else{
+        console.log('there is nothing to search')
     }
+  }
+  searchName(null)
 
-    getSpeedinMeterPerSecond(null)
-        
-
-
-
-
-
-    const throwError = (msg:string) : never =>  {
-        throw new Error(msg)
+  const getSpeedInMeterPerSecond = (value:unknown) => {
+    if(typeof value === 'number'){
+        const convertedSpeed = value*1000/3600;
+        console.log(`the speed is ${convertedSpeed} kmh`);
     }
-   
-    throwError('muskil se error hogaya')
+   else if(typeof value === 'string'){
+        const [valueis, unit] = value.split(' ');
+        const convertedSpeed = parseFloat(valueis)*1000/3600;
+        console.log(`the speed is ${convertedSpeed} kmh`);
+    }
+    else{
+        console.log('wrong input')
+    }
+  }
+  getSpeedInMeterPerSecond('2323 kmh')
+  getSpeedInMeterPerSecond(null)
 
 
+  const throwError = (msg:string) : never =>{
+    throw new Error(msg)
+  } 
 
-
-
-
-
-
-
-
+  throwError('dkfj')
 
 
 

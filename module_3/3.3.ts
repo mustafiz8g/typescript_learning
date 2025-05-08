@@ -56,10 +56,51 @@
 
 
 
+    // Revision 1 ==========================================================
+
+    type StrNum = string | number
+
+    const doMath = (p1: StrNum , p2 : StrNum ) : StrNum => {
+        if(typeof p1 === 'number' && typeof p2 === 'number'){
+           return p1 + p2
+        }
+        else{
+            return p1.toString() + p2.toString()
+        }
+    }
+
+    const doMAth = doMath(2,'dk');
+    console.log(doMAth)
 
 
 
 
+    type User = {
+        name: string
+    }
+    type Moderator = {
+        name: string;
+        role : 'moderator'
+    }
+
+    const whichUser = (user : User | Moderator) => {
+        if('role' in user){
+            return `${user.name} is Moderator`
+        }
+        else{
+            return `${user.name} is Normal`
+        }
+    } 
+    const sabiha : User ={
+        name: 'Sabiha'
+    }
+    const mustafizur : Moderator ={
+        name: 'Mustafizur',
+        role: 'moderator'
+    }
+
+    const isUser = whichUser(sabiha);
+    console.log(isUser)
 
 
 

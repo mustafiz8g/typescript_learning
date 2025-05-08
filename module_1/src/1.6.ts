@@ -14,6 +14,7 @@ function add(num1 : number, num2 : number= 10):number{
   
   
   // object --> function --> method
+  // object er moddhe function thakle setake bole method 
   
   const poorUser = {
       name: 'Anzuman',
@@ -22,6 +23,8 @@ function add(num1 : number, num2 : number= 10):number{
           return `My new balance is : ${this.balance + balance}`;
       },
   };
+
+
   
   
   const arr: number[] = [1,2,3,4,5];
@@ -29,7 +32,7 @@ function add(num1 : number, num2 : number= 10):number{
   const newArray:number[] = arr.map((elem: number): number => elem*elem)
 
 
-
+const newArray2: number[] = arr.map((element:number):number => element*element)
 
 
 
